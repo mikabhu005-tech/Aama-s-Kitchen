@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Restaurant</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+.btn {
+    background: #d4af37;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Sections */
+section {
+    padding: 100px 60px;
+    min-height: 100vh;
+}
+
+/* Hero */
+#home {
+    background: url(https://api.ecoholidaysnepal.com/media/attachments/What-Turns-Local-Foods-in-Nepal-Globally-Popular.jpg) no-repeat center/cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+	color:black;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+	color:black;
+}
+
+/* About */
+#about {
+    background: #1a1a1a;
+    text-align: center;
+}
+#about p {
+    font-size: 20px;
+}
+
+/* Menu */
+#menu {
+    background: #111;
+    text-align: center;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Contact */
+#contact {
+    background: #1a1a1a;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* Contact Section Styling */
+.contact-container {
+    padding: 60px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+h2 {
+    color: #ff6b4a;
+    margin-bottom: 15px;
+}
+
+.social span {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h2 class="logo">Aama's Kitchen</h2>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" class="btn">Return to home</a>
+</nav>
+
+<!-- Home -->
+<section id="home">
+    <div class="hero-content">
+        <h1>Aama's Kitchen</h1>
+        <p>
+            Authentic Nepali Taste made with Love❤
+        </p>
+        <br>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h1>About Us</h1>
+    <br>
+    <p>
+        Aama's Kitchen brings you the warmth of homemade Nepali food, just like your mother's cooking.It is a palce where you 
+  get authentic nepali cuisine made with Aama's love. It was establised in 1997 AD.Since then this restaurant has been runned as a family
+  restaurant with all the members of the family working and other few outside workers. When you enter this place it feels very like at 
+  home and calm, peaceful and cozy.<br><br>
+  At Aama’s Kitchen, we believe food is more than just a meal — it is an 
+experience that brings people together. From delicious Nepali specialties 
+to modern favorites, every dish is prepared with care to give our customers 
+a memorable dining experience in a cozy and welcoming atmosphere.
+    </p>
+</section>
+
+<!-- Menu -->
+<section id="menu">
+    <h1>Our Menu</h1>
+
+    <div class="menu-items">
+        <div class="item">
+            <h3>Burger</h3>
+			<img src="burger.png" alt="Burger"/>
+            <p>Rs. 300</p>
+        </div>
+
+        <div class="item">
+            <h3>Pizza</h3>
+			<img src="C:/Users/user/Desktop/web/pizza.png" alt="Pizza"/>
+            <p>Rs. 800</p>
+        </div>
+
+        <div class="item">
+            <h3>Chowmein</h3>
+			<img src="C:/Users/user/Desktop/web/chowmein.png" alt="Chowmein"/>
+			<p>chicken/buff/veg</p>
+            <p>Rs. 150</p>
+        </div>
+
+        <div class="item">
+            <h3>Momo</h3>
+			<img src="C:/Users/user/Desktop/web/nepali-momo.png" alt="Momo"/>
+			<p>chicken/buff/veg</p>
+            <p>Rs. 150</p>
+        </div>
+		
+		<div class="item">
+            <h3>Sel roti</h3>
+			<img src="C:/Users/user/Desktop/web/sel roti.png" alt="Sel roti"/>
+            <p>Rs. 30</p>
+        </div>
+		
+		<div class="item">
+            <h3>Khana set</h3>
+			<img src="C:/Users/user/Desktop/web/dal-bhat-tarkari-(2).png" alt="Khana set"/>
+            <p>Rs. 100</p>
+        </div>
+		
+		<div class="item">
+            <h3>Pork Sekuwa</h3>
+			<img src="C:/Users/user/Desktop/web/pork.png" alt="Pork sekuwa"/>
+			<p>Rs. 180</p>
+        </div>
+		
+		<div class="item">
+            <h3>Chicken Lollipop</h3>
+			<img src="C:/Users/user/Desktop/web/chicken.png" alt="Chicken lollipop"/>
+            <p>Rs. 250</p>
+        </div>
+		<div class="item">
+            <h3>Thukpa</h3>
+			<img src="C:/Users/user/Desktop/web/thukpa.png" alt="Thukpa"/>
+			<p>Mix/buff/chicken</p>
+            <p>Rs. 190</p>
+        </div>
+		<div class="item">
+            <h3>Wai Wai sadeko</h3>
+			<img src="C:/Users/user/Desktop/web/wai wai sadeko.png" alt="Wai wai sadeko"/>
+            <p>Rs. 80</p>
+        </div>
+		<div class="item">
+            <h3>Soft drinks</h3>
+			<img src="C:\Users\user\Desktop\web/drinks.png" alt="soft drinks"/>
+			<p>coke/fanta/sprite/dew</p>
+            <p>Rs. 80</p>
+        </div>
+		<div class="item">
+            <h3>Milk tea</h3>
+			<img src="C:/Users/user/Desktop/web/tea.png" alt="milk tea"/>
+            <p>Rs. 25</p>
+        </div>
+		<div class="item">
+            <h3>Lassi</h3>
+			<img src="C:/Users/user/Desktop/web/lassi.png" alt="lassi"/>
+            <p>Rs. 120</p>
+        </div>
+		<div class="item">
+            <h3>Kheer</h3>
+			<img src="C:/Users/user/Desktop/web/kheer.png" alt="kheer"/>
+            <p>Rs. 100</p>
+        </div>
+		<div class="item">
+            <h3>Desserts</h3>
+			<img src="C:/Users/user/Desktop/web/des.png" alt="Desserts"/>
+			<p>gulab jamun/jeri/laddu/peda</p>
+            <p>Rs. 30</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+<div class="contact-container">
+
+    <div class="logo">Aama's Kitchen</div>
+
+    <div class="contact-grid">
+
+        <!-- LEFT SIDE -->
+        <div>
+            <h2>Contact</h2>
+            <p>Email: info@aamaskitchen.com<br>Phone: +977-9800000000</p>
+
+            <h2>Opening Hour</h2>
+            <p>
+                Opening Hours: 11 AM - 10 PM (Monday to Friday)<br>
+                Brunch: 8 AM - 1 PM (Saturday and Sunday)<br>
+                <i>Prior reservation is required for Breakfast</i>
+            </p>
+
+            <div class="social">
+                <span>🌐</span>
+                <span>📸</span>
+                <span>🦉</span>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div>
+            <h2>For Reservation</h2>
+            <p>
+                Call us at: +977-9801159480,<br>
+                01-4528604
+            </p>
+
+            <h2>Location</h2>
+            <p>
+                Deep-16,Pokhara, Nepal<br>
+                Beside Kamana Sewa bank.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+<footer>
+    <p>© 2026 Code Restaurant | All Rights Reserved</p>
+</footer>
+</body>
+</html>
